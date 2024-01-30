@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background: url(../bg-1.png) no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.snake img{
+    position: absolute;
+    height: 70vh;
+    top: 20vh;
+    left: 4%;
+}
+
+#board{
+    background: linear-gradient(rgb(214, 254, 83),rgb(247, 247, 3));
+    width: 50vw;
+    height: 80vh;
+    border: 3px solid beige;
+    display: grid;
+    grid-template-rows: repeat(20,1fr);
+    grid-template-columns: repeat(25,1fr);
+
+}
+
+.score{
+    display: flex;
+    position: absolute;
+    top: 80px;
+    right: 5vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    color: white;
+}
+.highscore{
+    display: flex;
+    position: absolute;
+    top: 150px;
+    right: 1.5vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    color: white;
+}
+
+.head{
+    background: linear-gradient(rgb(0, 222, 0),rgb(90, 90, 90)) ;
+    border-radius: 28px;
+    transform: scale(1.10);
+}
+
+
+.snakebody{
+    border-radius: 28px;
+    background:url(../texture.png);
+    background-image: 15px;
+    background-repeat: no-repeat;
+}
+
+.food{
+    background: url(../apple.png);
+    background-size:contain; 
+    background-repeat: no-repeat;
+
+}
